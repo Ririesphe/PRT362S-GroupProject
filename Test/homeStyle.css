@@ -1,0 +1,181 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img { /* for all the images, mostly used as backgrounds*/
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*----------------------------Header------------------------------------------------- */
+.header {
+  background-color: #f8f8f8; /* Example background color */
+  padding: 20px 0; /* Padding for the header */
+}
+
+/* Flexbox styles for the container */
+.header-container {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Center items vertically */
+  max-width: 1200px; /* Optional: Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Styles for the logo */
+.logo {
+  display: flex; /* Use flexbox for logo alignment */
+  align-items: center; /* Center logo items vertically */
+  gap: 10px; /* Space between logo text and image */
+}
+.logo-image {
+  width: 70px;
+  height: auto;
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the navigation */
+.main-nav ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for horizontal layout */
+}
+
+.main-nav li {
+  margin-left: 20px; /* Space between navigation items */
+}
+
+.main-nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Link color */
+  padding: 10px; /* Padding for clickable area */
+}
+
+.main-nav a.active {
+  font-weight: bold; /* Highlight active link */
+}
+
+.order-btn {
+  background-color:rgb(255, 153, 0);
+  color: white;
+  padding: 20px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  }
+  
+  .order-btn:hover {
+  background-color: rgba(255, 153, 0, 0.678);
+  transform: translateY(-4px);
+  }
+  
+
+
+
+
+/* ----------------------------Footer -------------------------------*/
+.footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 60px 0 20px;
+}
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  font-family: 'Playfair Display', serif;
+  color:rgb(255, 153, 0);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-section h4 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-section h4:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: rgb(255, 153, 0);
+  margin-top: 10px;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color:rgb(255, 153, 0);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.social-icon:hover {
+  background-color: rgb(255, 153, 0);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+}

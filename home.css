@@ -1,0 +1,53 @@
+body {
+
+
+}
+header{
+    background-color: lightslategray;
+}
+
+main{
+    
+}
+/*<!--
+    The "id" is used in css to identify the referenced tag
+   The "class" is used in css to identify a group and call apon it
+ -->*/
+ .home{
+
+    background-image: url(pic/Pizza9.png);
+    width: auto; 
+    height: auto;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+ }
+ #t{
+    color: white;
+ }
+#img2{
+    height: 100px;
+    width: 100px;
+
+}
+
+
+#box{
+    font-size: 20px;
+    border: 3px solid lightsalmon;
+    border-radius: 15px;
+    width: auto; 
+    padding: 5px;
+}
+#ticket{
+    border: 3px solid lightsalmon;
+    border-radius: 5px;
+}
+.button{
+    text-decoration: none;
+}
+
+footer{
+    background-color: lightslategray;
+
+}
