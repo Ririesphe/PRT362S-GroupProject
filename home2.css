@@ -10,6 +10,9 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #fff;
+  margin-top: 100px; /* Adjust this value based on the height of your nav bar to make sure nothing gets truncated */
+
+
 }
 
 .container { /* for all the sections, including header and footer*/
@@ -137,24 +140,30 @@ color: rgb(255, 153, 0);
 font-size: 2rem;
 margin: 0;
 letter-spacing: 1px;
+display: flex;
+align-items: center;
+gap: 15px; /* Space between logo image and name */
 }
 
-.tagline {
+/* .tagline {
 font-size: 0.9rem;
 color: #777;
 margin-top: -5px;
-}
+} */
 
 .main-nav ul {
 display: flex;
-gap: 30px;
+gap: 20px;
+list-style: none;
 }
 .main-nav {
+display: flex;
+gap: 30px;
   margin-left: auto; /* This will push the nav to the right */
 }
 .main-nav a {
 font-weight: 500;
-position: relative;
+/* position: relative; */
 padding: 10px 5px;
 }
 
